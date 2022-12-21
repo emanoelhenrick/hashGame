@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 39);
+}
+
+h1 {
+    color: white;
+}
+
+.stage {
+    background-color: rgb(202, 202, 202);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid gray;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.o {
+    position: relative;
+}
+
+.o:after {
+    content: '\2B55';
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x:after {
+    content: '\274C';
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button {
+    margin-top: 35px ;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+}
